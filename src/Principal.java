@@ -14,10 +14,11 @@
 public class Principal {
 
     /**
+     * Busca Binaria.
      * Entrada: Vetor A, delimitadores e e d do subvetor e x.
      * B Saída: Indice 1 <= i <= n tal que A[i] = x ou i = 0
      * Slide 62
-     * @param A vetor com os valores
+     * @param A vetor com os valores 
      * @param e indice do inicio do vetor
      * @param d indice do final do vetor
      * @param x valor a ser procurado no vetor
@@ -52,11 +53,8 @@ public class Principal {
             }
             return i;
         }
-    }
-    
-    /**
-     * @param args the command line arguments
-     */
+    }    
+   
     public static void main(String[] args) {
         //Vetor dos dados    
         int A[] = {10, 20, 30, 40, 50, 60, 70, 80};
