@@ -4,7 +4,16 @@
  * Programa de Pós-Graduação em Ciências da Computação - PROPG
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
- * Baseado nos slides da aula 01/09/2017 
+ *
+ * Baseado nos slides 62 da aula 01/09/2017 
+ *
+ * Algoritmo de Busca Binária
+ *
+ * Atenção:
+ * Vetor em java inicia em 0, os algoritmos consideram início em 1.
+ * A subtraçào de -1 ocorre somente no local de acesso ao vetor ou matriz 
+ * para manter a compatibilidade entre os algoritmos.
+ * 
  */
 
 /**
@@ -27,23 +36,23 @@ public class Principal {
         //Chegou no final do intervalo
         if(e==d){
             //Verifica se é o valor desejado
-            if(A[e]==x){
+            if(A[e-1]==x){
                 //Acho o valor
                 return e;
             } else {
                 //Não achou
-                return -1;
+                return 0;
             }
         } else {
             //Divide o intervalo
             int i = (e+d)/2;
             //Vefifica se é igual
-            if ((A[i])==x){
+            if ((A[i-1])==x){
                 //Retorna a posição
                 return i;
             } else {
                 //Verifica se o valor da posição i e maior que x
-                if (A[i] > x){
+                if (A[i-1] > x){
                     //Busca na parte inferior
                     i=buscaBinaria(A,e,i-1,x);
                 }else {//A[i] < x
@@ -60,15 +69,23 @@ public class Principal {
         int A[] = {10, 20, 30, 40, 50, 60, 70, 80};
         
         //Inicio do vetor
-        int e = 0;
+        int e = 1;
         //Fim do vetor
-        int d = A.length-1;
+        int d = A.length;
+        
         //Valor a ser procurado
-        int x = 10;
-        
+        int x = 10;        
         int i = buscaBinaria(A, e , d, x);
-        System.out.println("O valor "+ x + " está na posição :"+i);
+        System.out.println("Teste 1: o valor: "+ x + " está na posição :"+i);
         
-    }
-    
+        //Valor a ser procurado
+        x = 40;        
+        i = buscaBinaria(A, e , d, x);
+        System.out.println("Teste 2: o valor: "+ x + " está na posição :"+i);
+        
+        //Valor a ser procurado
+        x = 80;        
+        i = buscaBinaria(A, e , d, x);
+        System.out.println("Teste 3: o valor: "+ x + " está na posição :"+i);
+    }    
 }
