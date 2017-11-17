@@ -26,7 +26,9 @@ public class Principal {
      * Busca Binaria.
      * Entrada: Vetor A, delimitadores e e d do subvetor e x.
      * B Saída: Indice 1 <= i <= n tal que A[i] = x ou i = 0
-     * Slide 62
+     * 
+     * Slide 62 da aula 01/09/2017 
+     * 
      * @param A vetor com os valores 
      * @param e indice do inicio do vetor
      * @param d indice do final do vetor
