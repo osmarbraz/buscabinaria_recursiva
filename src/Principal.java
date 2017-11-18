@@ -7,7 +7,8 @@
  *
  * Baseado nos slides 62 da aula 01/09/2017 
  *
- * Algoritmo de Busca Binária
+ *
+ * Algoritmo de Busca Binária Recursiva/Recursive BinarySearch
  *
  * Atenção:
  * Vetor em java inicia em 0, os algoritmos consideram início em 1.
@@ -21,9 +22,9 @@
  * @author Osmar de Oliveira Braz Junior
  */
 public class Principal {
-
+ 
     /**
-     * Busca Binaria.
+     * Busca Binaria Recursiva.
      * Entrada: Vetor A, delimitadores e e d do subvetor e x.
      * B Saída: Indice 1 <= i <= n tal que A[i] = x ou i = 0
      * 
@@ -65,7 +66,7 @@ public class Principal {
             return i;
         }
     }    
-   
+    
     public static void main(String[] args) {
         //Vetor dos dados    
         int A[] = {10, 20, 30, 40, 50, 60, 70, 80};
@@ -74,6 +75,8 @@ public class Principal {
         int e = 1;
         //Fim do vetor
         int d = A.length;
+        
+        System.out.println(">>> Algoritmo de Busca Binária Recursiva/Recursive BinarySearch <<<");
         
         //Valor a ser procurado
         int x = 10;        
