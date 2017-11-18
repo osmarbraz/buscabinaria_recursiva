@@ -5,8 +5,7 @@
  * Disciplinas: Projeto e Análise de Algoritmos
  * Prof Alexandre Gonçalves da Silva 
  *
- * Baseado nos slides 62 da aula 01/09/2017 
- *
+ * Baseado nos slides 62 da aula 01/09/2017  
  *
  * Algoritmo de Busca Binária Recursiva/Recursive BinarySearch
  *
