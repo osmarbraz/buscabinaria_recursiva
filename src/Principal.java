@@ -23,14 +23,14 @@
 public class Principal {
  
     /**
-     * Busca Binaria Recursiva.
+     * Busca Binária Recursiva.
      * Entrada: Vetor A, delimitadores e e d do subvetor e x.
      * B Saída: Índice 1 <= i <= n tal que A[i] = x ou i = 0
      * 
      * Slide 62 da aula 01/09/2017 
      * 
      * @param A vetor com os valores 
-     * @param e índice do inicio do vetor
+     * @param e índice do início do vetor
      * @param d índice do final do vetor
      * @param x valor a ser procurado no vetor
      */
